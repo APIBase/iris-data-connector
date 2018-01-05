@@ -4,14 +4,9 @@ var client = new APIBase({
 });
 
 
-var GET_SQL = 'aa746210-294a-4e57-bff0-4ba05d948645';
+var GET_YQL = '45df6b25-94a7-4713-be1e-8c57de8f6b4c';
 module.exports = function(source, resourceType, cb) {
-  client.invokeOperation(GET_SQL, source, null, null, function(err, result) {
-    try {
-      var table = JSON.parse(result.body);
-      cb(err, table);
-    } catch (e) {
-      cb(e);
-    }
+  client.invokeOperation(GET_YQL, source, null, null, function(err, result) {
+    cb(err, result.body);
   });
 };
