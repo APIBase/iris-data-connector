@@ -1,5 +1,5 @@
 {
-  "name": "gtable-connector",
+  "name": "iris-data-connector",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,5 @@
   "author": "John Sun",
   "license": "MIT",
   "dependencies": {
-    "apibase-client": "^0.3.1"
   }
 }
