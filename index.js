@@ -151,6 +151,16 @@ var DATA = [
   [5.9,3.0,5.1,1.8,"Iris-virginica"],
 ];
 
+DATA = DATA.map(function(item) {
+  return {
+    sepalLength: item[0],
+    sepalWidth: item[1],
+    petalLength: item[2],
+    petalWidth: item[3],
+    class: item[4],
+  }
+});
+
 module.exports = function(source, resourceType, cb) {
   cb(null, DATA);
 };
